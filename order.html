@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Abaya</title>
+  <style>
+    body{
+      font-family: sans-serif;
+      background:#f5f5f5;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+
+    .form-box{
+      background:white;
+      padding:25px;
+      border-radius:10px;
+      width:300px;
+      box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, textarea{
+      width:100%;
+      padding:10px;
+      margin:10px 0;
+      border:1px solid #ccc;
+      border-radius:5px;
+    }
+
+    button{
+      width:100%;
+      padding:10px;
+      background:#6a5cff;
+      color:white;
+      border:none;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#5548d9;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-box">
+  <h2>Order Now</h2>
+
+  <form action="https://formsubmit.co/basitattari000@gmail.com" method="POST">
+
+    <input type="text" name="Name" placeholder="Apna naam likho" required>
+
+    <input type="tel" name="Phone" placeholder="Phone number" required>
+
+    <textarea name="Address" placeholder="Apna address likho" required></textarea>
+
+    <!-- Email subject -->
+    <input type="hidden" name="_subject" value="New Abaya Order">
+
+    <!-- Stay on same page -->
+    <input type="hidden" name="_next" value="order.html">
+
+    <!-- Disable captcha -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit">Confirm Order</button>
+
+  </form>
+</div>
+
+</body>
+</html>
