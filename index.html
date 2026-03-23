@@ -49,26 +49,17 @@
 <div class="form-box">
   <h2>Order Now</h2>
 
-  <form action="https://formsubmit.co/basitattari000@gmail.com" method="POST">
+<form action="https://formsubmit.co/basitattari000@gmail.com" method="POST">
+  <input type="text" name="Name" placeholder="Apna naam" required>
+  <input type="tel" name="Phone" placeholder="Phone number" required>
+  <textarea name="Address" placeholder="Apna address" required></textarea>
 
-    <input type="text" name="Name" placeholder="Apna naam likho" required>
+  <input type="hidden" name="_subject" value="New Abaya Order">
+  <input type="hidden" name="_next" value="thankyou.html"> <!-- Redirect -->
+  <input type="hidden" name="_captcha" value="false">
 
-    <input type="tel" name="Phone" placeholder="Phone number" required>
-
-    <textarea name="Address" placeholder="Apna address likho" required></textarea>
-
-    <!-- Email subject -->
-    <input type="hidden" name="_subject" value="New Abaya Order">
-
-    <!-- Stay on same page -->
-    <input type="hidden" name="_next" value="order.html">
-
-    <!-- Disable captcha -->
-    <input type="hidden" name="_captcha" value="false">
-
-    <button type="submit">Confirm Order</button>
-
-  </form>
+  <button type="submit">Confirm Order</button>
+</form>
 </div>
 </body>
 </html>
