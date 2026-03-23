@@ -54,13 +54,16 @@
   <input type="tel" name="Phone" placeholder="Phone number" required>
   <textarea name="Address" placeholder="Apna address" required></textarea>
 
+  <!-- Email subject -->
   <input type="hidden" name="_subject" value="New Abaya Order">
-  <input type="hidden" name="_next" value="/thankyou.html">
+
+  <!-- Redirect user to Thank You page after submit -->
+  <input type="hidden" name="_next" value="thankyou.html">
+
+  <!-- Disable captcha -->
   <input type="hidden" name="_captcha" value="false">
 
-">
   <button type="submit">Confirm Order</button>
-
 </form>
 </div>
 </body>
